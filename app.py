@@ -13,7 +13,6 @@ import dash_leaflet.express as dlx
 from dash_extensions.javascript import arrow_function
 from dash_extensions.javascript import assign
 import json
-import orjson
 import time
 
 from app_state import App_State
