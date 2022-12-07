@@ -2,7 +2,6 @@ from dash import Dash, callback, html, dcc
 import dash_bootstrap_components as dbc
 import numpy as np
 import pandas as pd
-import matplotlib as mpl
 import gunicorn                     #whilst your local machine's webserver doesn't need this, Heroku's linux webserver (i.e. dyno) does. I.e. This is your HTTP server
 
 # Instantiate dash app
