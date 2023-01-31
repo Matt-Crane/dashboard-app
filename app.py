@@ -29,6 +29,8 @@ import structures as struct
 
 ######################################################################################
 app = dash.Dash(__name__, external_stylesheets=["custom.css"])
+server = app.server
+
 
 cache = Cache(app.server, config={
     'CACHE_TYPE': 'filesystem',
