@@ -52,11 +52,12 @@ def write_json(name, content):
 
 def read_json(name):
     print("loading ",name)
-    with open(os.path.join("assets"+name), "r") as f:
+    with open(os.path.join("assets",name), "r") as f:
         return json.load(f)
 
 def get_map_overlay(study):
     with open(os.path.join("assets","map overlays","{}.geojson".format(study)), 'r') as f:
         returned_data = json.load(f)
     return returned_data
+
 
